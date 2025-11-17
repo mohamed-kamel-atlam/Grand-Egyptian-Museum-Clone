@@ -1,0 +1,169 @@
+/* ========== WELCOME BOOK TACKIT ========== */
+
+.welcome-content img {
+    width: 100%;
+}
+
+/* ========== MAIN SECTION ========== */
+
+.main-content {
+    background-color: #f8f8f8;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.main-content h2 {
+    margin-bottom: 15px;
+    font-size: clamp(1rem , 2.5vw , 5rem);
+    font-weight: 800;
+    text-align: center;
+}
+
+.main-content-form {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px 30px;
+    border-radius: 3px;
+}
+
+.main-content-form p {
+    font-weight: 800;
+    font-size: clamp(1rem , 1.3vw , 1.5rem);
+    word-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.main-content-form-grid {
+  display: grid;
+  grid-template-areas: 
+    "first-name last-name"
+    "email email-conf"
+    "nationality number";
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+}
+
+.main-content-form-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-form-grid label {
+    margin-bottom: 2px;
+    font-size: clamp(1rem , 1.3vw , 1.4rem);
+    font-weight: 800;
+    position: relative;
+}
+
+.main-content-form-grid label span {
+    color: #dc3545;
+    position: absolute;
+    font-size: clamp(1rem , 1.10vw , 1.2rem);
+}
+
+.main-content-form-grid input {
+    height: 30px;
+}
+
+.main-content-form-grid select {
+    height: 30px;
+}
+
+.main-content-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.main-content-buttons a:first-child , 
+.main-content-buttons a:last-child {
+    display: block;
+    border: 1px solid #e87524;
+    color: #e87524;
+    width: 5%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    font-size: clamp(1rem , 1.5vw , 1.5rem);
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+.main-content-buttons a:last-child {
+    background-color: #e87524;
+    color: #fff;
+    width: 10%;
+    border: 0;
+    opacity: 0.5;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .main-content-form {
+        width: 90%;
+        padding: 15px;
+    }
+    .main-content-form-grid {
+        grid-template-areas: 
+            "first-name"
+            "last-name"
+            "email"
+            "email-conf"
+            "nationality"
+            "number";
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .main-content-buttons a:first-child , 
+    .main-content-buttons a:last-child {
+        width: 40%;
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-content-form {
+        width: 80%;
+    }
+    .main-content-buttons a:first-child , 
+    .main-content-buttons a:last-child {
+        width: 30%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-content-form {
+        width: 70%;
+    }
+    .main-content-buttons a:first-child , 
+    .main-content-buttons a:last-child {
+        width: 20%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-content-form {
+        width: 65%;
+    }
+    .main-content-buttons a:first-child {
+        width: 8%;
+    }
+    .main-content-buttons a:last-child {
+        width: 15%;
+    }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .main-content-form {
+        width: 60%;
+    }
+}

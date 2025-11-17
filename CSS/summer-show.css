@@ -1,0 +1,233 @@
+/* ========== WELCOME SUMMER ========== */
+
+.welcome-summer img {
+    width: 100%;
+}
+
+/* ========== GEM SECTION ========== */
+
+.gem-content {
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gem-content-desc p {
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+} 
+
+.gem-content img {
+    width: 32%;
+    height: 40vh;
+}
+
+/* ========== MAIN SECTION ========== */
+
+.main-content {
+    background-color: #e9f2f2;
+    padding: 50px 80px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main-content .main-content-item:first-child {
+    margin-bottom: 80px;
+}
+
+.main-content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content-item-desc {
+    width: 45%;
+}
+
+.main-content-item-desc p {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main-content-item-desc h3 {
+    font-weight: 800;
+    font-size: clamp(1rem , 1.4vw , 1.5rem);
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.main-content-item-desc p span {
+    color: #e87524;
+    font-weight: 800;
+    font-size: clamp(1rem , 1.5vw , 1.5rem);
+}
+
+.main-content-item-desc a {
+    display: block;
+    background-color: #e87524;
+    color: #fff;
+    width: 23%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    font-size: clamp(1rem , 1.3vw , 1.5rem);
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+.main-content-item img {
+    width: 40%;
+}
+
+/* ========== INFO SECTION ========== */
+
+.info-conent {
+    background-color: #e9f2f2;
+    padding: 5px 40px;
+    padding-bottom: 20px;
+    width: 85%;
+    margin: 80px auto;
+}
+
+.info-conent h2 {
+    color: #e87524;
+}
+
+.info-conent ul {
+    padding-right: 15px;
+    line-height: 1.3rem;
+}
+
+.info-conent ul li {
+    font-weight: 800;
+    font-size: clamp(1rem , 1.3vw , 1.5rem);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .gem-content {
+        width: 100%;
+        align-items: center;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .gem-content-desc p {
+        margin-bottom: 10px;
+        line-height: 1.2rem;
+    }
+
+    .gem-content img {
+        width: 60%;
+        height: 40vh;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        padding: 30px 50px;
+        width: 98%;
+    }
+
+    .main-content-item {
+        align-items: start;
+    }
+
+    .main-content-item-desc p {
+        margin-bottom: 10px;
+    }
+
+    .main-content-item-desc h3 {
+        line-height: 1.1rem;
+    }
+
+    .main-content-item img {
+        width: 40%;
+        height: 40vh;
+        padding-top: 30px;
+    }
+
+    .main-content-item-desc {
+        width: 50%;
+    }
+
+    .main-content-item-desc a {
+        width: 50%;
+    }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .gem-content {
+        width: 100%;
+        align-items: center;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .gem-content-desc p {
+        margin-bottom: 15px;
+    }
+
+    .gem-content img {
+        width: 60%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        padding: 30px 50px;
+        width: 95%;
+    }
+
+    .main-content-item {
+        align-items: start;
+    }
+
+    .main-content-item-desc p {
+        margin-bottom: 10px;
+    }
+
+    .main-content-item img {
+        width: 40%;
+        padding-top: 15px;
+    }
+
+    .main-content-item-desc {
+        width: 50%;
+    }
+
+    .main-content-item-desc a {
+        width: 50%;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .gem-content img {
+        width: 50%;
+    }
+
+    .main-content {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .main-content-item img {
+        width: 50%;
+    }
+}
+
+/* Large devices */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .gem-content img {
+        width: 40%;
+    }
+
+    .main-content-item img {
+        width: 45%;
+    }
+}

@@ -1,0 +1,193 @@
+/* ========== WELCOME ENTRANCE TACKIT ========== */
+
+.welcome-content img {
+    width: 100%;
+}
+
+/* ========== MAIN SECTION ========== */
+
+.main h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: clamp(1rem , 2.4vw , 4rem);
+}
+
+.main-content {
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.main-content-calender .count-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.count-page-item {
+    border: 1px solid #e87524;
+    color: #e87524;
+    font-size: clamp(1rem , 1.5vw , 1.4rem);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-page-item:last-child {
+    background-color: #e87524;
+    color: #fff;
+    position: relative;
+}
+
+.count-page-item:last-child::after {
+    content: "";
+    position: absolute;
+    left: 46px;
+    background-color: #e87524;
+    width: 85px;
+    height: 2px;
+}
+
+.main-content-calender .title h2 {
+    margin: 20px 0;
+    font-size: clamp(1rem , 2vw , 4rem);
+}
+
+.main-content-calender table {
+    margin: 20px auto;
+    width: 35%;
+}
+
+.main-content-calender table caption {
+    font-size: clamp(1rem , 1.6vw , 3rem);
+    margin-bottom: 15px;
+}
+
+.main-content-calender table thead {
+    color: #e87524;
+}
+
+.main-content-calender table tbody tr {
+    margin-bottom: 10px;
+}
+
+.main-content-calender table tbody td {
+    border: #f8f8f8;
+    font-size: clamp(1rem , 1.15vw , 1.5rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.main-content-calender table tbody td:hover {
+    cursor: pointer;
+    border: 1px solid #e87524;
+}
+
+.main-content-calender table tbody .past {
+    color: #bbb;
+}
+
+.main-content-calender table tbody .past:hover {
+    cursor: auto;
+    border: 0;
+}
+
+.main-content-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.main-content-buttons a:first-child , 
+.main-content-buttons a:last-child {
+    display: block;
+    border: 1px solid #e87524;
+    color: #e87524;
+    width: 5%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    font-size: clamp(1rem , 1.5vw , 1.5rem);
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+.main-content-buttons a:last-child {
+    background-color: #e87524;
+    color: #fff;
+    width: 10%;
+    border: 0;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Mobile */
+@media (max-width: 600px) {
+    .main h2 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .main-content-calender .count-page {
+        gap: 20px;
+    }
+
+    .count-page-item:last-child::after {
+        width: 12px;
+        left: 43.5px;
+    }
+
+    .main-content-calender table {
+        width: 90%;
+    }
+
+    .main-content-buttons a:first-child, 
+    .main-content-buttons a:last-child {
+        width: 30%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main h2 {
+        font-size: 2rem;
+    }
+
+    .main-content-calender .count-page {
+        gap: 50px;
+    }
+
+    .count-page-item:last-child::after {
+        width: 41px;
+        left: 43.5px;
+    }
+
+    .main-content-calender table {
+        width: 60%;
+    }
+
+    .main-content-buttons a:first-child, 
+    .main-content-buttons a:last-child {
+        width: 20%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .main-content-calender table {
+        width: 45%;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1441px) {
+    .main-content-calender table {
+        width: 30%;
+    }
+}

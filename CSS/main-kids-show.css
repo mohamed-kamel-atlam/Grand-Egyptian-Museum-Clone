@@ -1,0 +1,133 @@
+/* ========== MAIN SECTION ========== */
+
+.container-main {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 100px;
+}
+
+.main-content-desc h2 {
+    margin-bottom: 10px;
+    color: #e87524;
+}
+
+.main-content-desc p {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main-content-desc ul {
+    padding-right: 30px;
+}
+
+.main-content-desc ul li {
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    font-weight: 600;
+}
+
+.main-content-desc ul li span {
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
+    font-weight: 300;
+}
+
+.main-content-desc ul li a {
+    text-decoration: underline;
+}
+
+.main-content-desc ul li:last-child {
+    margin-bottom: 20px;
+}
+
+.main-content-desc .buttons a {
+    display: inline-block;
+    background-color: #e87524;
+    border-radius: 10px;
+    width: 30%;
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    font-size: clamp(1rem, 1.35vw, 1.5rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.main-content-desc .buttons a:hover {
+    opacity: 0.85;
+}
+
+.main-content img {
+    padding-top: 10px;
+    width: 42%;
+    height: 30%;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .main-content-desc ul {
+        list-style: none;
+    }
+
+    .main-content img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .main-content-desc .buttons a {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content-desc ul {
+        list-style: none;
+    }
+
+    .main-content img {
+        width: 80%;
+        height: auto;
+    }
+
+    .main-content-desc .buttons a {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-content img {
+        width: 60%;
+    }
+}
+
+/* Large devices */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-content img {
+        width: 50%;
+    }
+}
